@@ -1,7 +1,7 @@
 import axios from "axios";
 import Image from "next/image";
 async function getUserData() {
-  //   await new Promise((r) => {setTimeout(r,5000)})
+    await new Promise((r) => {setTimeout(r,5000)})
     const response = await axios.get('https://dummyjson.com/products')
     return response.data
 }
